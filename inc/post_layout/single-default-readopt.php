@@ -59,7 +59,7 @@
 
                                             <p><?php the_title(); ?></p>
                                             <span class="price"><?php echo $product->get_price_html(); ?></span> 
-                                        
+                                            <div> Agregar al pedido</div>
                                         </div>                    
 
                                     </div>
