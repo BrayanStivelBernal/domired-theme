@@ -1,0 +1,199 @@
+/*
+	Theme Name: DOMIRED
+	Theme URI: https://brayanbernal.com
+	Description: Es una plataforma GRATUITA que nace como iniciativa para proveer a las personas de los mejores productos y hacer progreso.
+	Author: Brayan Bernal
+	Author URI: https://brayanbernal.com
+	Version: 1.0
+	Template: rehub-theme
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* Tabla contenido*/
+
+.rh_post_layout_fullimage{
+	margin-bottom:0 !important;
+}
+
+
+
+@media ( min-width: 800px ) {
+	
+	.stv-tabs{
+		background-color: #e74635;
+		padding: 10px;
+		color: white;
+		text-align: center;
+		font-weight: 800;
+		text-transform: uppercase;
+		box-shadow: 10px 3px 12px #9c1d1d;
+	}
+
+	.stv-tabs .comercio-tabs{
+		border-right:1px solid #ffffff90;
+	}
+	.stv-tabs .comercio-tabs:hover{
+		color: #ffb806;
+    	text-shadow: 1px 1px 1px #77746e;
+	}
+	.stv-tabs .comercio-tabs:last-child{
+		border-right:none;
+	}
+}
+
+@media ( max-width: 800px ) {
+	
+	.stv-tabs{
+		
+		padding: 10px;
+		color: white;
+		text-align: center;
+		font-weight: 800;
+		text-transform: uppercase;
+		
+	}
+
+	.stv-tabs .comercio-tabs{
+		-webkit-flex: 1 1 45% !important;
+		flex: 1 1 45% !important;
+		max-width: 45% !important;
+		margin:5px;
+		background-color:#e74635 ;
+		border-radius:10px;
+		padding:5px;
+		color:white;
+		box-shadow: 3px 3px 9px #9c1d1d;
+	}
+
+	.stv-tabs .comercio-tabs:hover{
+		background-color:white;
+		color:#e74635;
+	}	
+	
+}
+
+@media ( min-width: 200px ) and ( max-width: 400px ) {
+	
+	.stv-producto-img-container{
+
+		height:110px !important;
+		
+	}
+
+	.stv-producto-item{
+		-webkit-flex: 1 1 100%;
+		-ms-flex: 1 1 100%;
+		flex: 1 1 100%;
+		max-width: 100%;
+		max-height: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	
+}
+
+@media ( min-width: 400px ) and ( max-width: 600px ) {
+	
+	.stv-producto-img-container{
+
+		height:150px !important;
+		
+	}
+
+	.stv-producto-item{
+		-webkit-flex: 1 1 100%;
+		-ms-flex: 1 1 100%;
+		flex: 1 1 100%;
+		max-width: 100%;
+		max-height: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	
+}
+
+@media ( min-width: 600px ) and ( max-width: 800px ) {
+	
+	.stv-producto-img-container{
+
+		height:160px !important;
+		
+	}
+
+	.stv-producto-item{
+		-webkit-flex: 1 1 100%;
+		-ms-flex: 1 1 100%;
+		flex: 1 1 100%;
+		max-width: 100%;
+		max-height: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	
+}
+
+@media ( min-width: 800px ) and ( max-width: 1200px ) {
+	
+	.stv-producto-img-container{
+
+		height:170px !important;
+		
+	}
+
+	.stv-producto-item{
+		-webkit-flex: 1 1 47%;
+		-ms-flex: 1 1 47%;
+		flex: 1 1 47%;
+		max-width: 47%;
+		max-height: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	
+}
+
+@media ( min-width: 1200px ) {
+	
+	.stv-producto-img-container{
+
+		height:180px !important;
+		
+	}
+
+	.stv-producto-item{
+		-webkit-flex: 1 1 48%;
+		-ms-flex: 1 1 48%;
+		flex: 1 1 48%;
+		max-width: 48%;
+		max-height: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+	
+}
+
+
+.stv-products-loop > .row{
+	background-color: #e1e1e1;
+    margin: 10px;
+    border-radius: 13px;
+    padding: 5px;
+}
+
+.stv-producto-img-container{
+
+	padding: 6px;
+	width: 40%;
+}
+
+.stv-producto-img-container img{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.stv-detalles-container{
+	width: 60%;
+}

@@ -1,0 +1,64 @@
+[13-Apr-2020 20:35:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:35:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:37:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:39:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:40:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
+[13-Apr-2020 20:40:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/simplnzz/public_html/colombiapreviene.com/wp-content/themes/rehub-blankchild/includes_cp/ajax.php on line 4
