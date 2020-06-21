@@ -58,9 +58,29 @@
                                         <div class="stv-detalles-container">
 
                                             <p><?php the_title(); ?></p>
-                                            <span class="price"><?php echo $product->get_price_html(); ?></span> 
-                                            <div> Agregar al pedido</div>
-                                        </div>                    
+                                            <div class="row-wrap space-around-center">
+                                                <div class="column s-30">
+                                                   <span class="price"><?php echo $product->get_price_html(); ?></span> 
+                                                   <?php 
+                                                   $product = wc_get_product(  $loop->post->ID );
+                                            
+                                                   ?>
+                                                    <div class="quantity">
+                                                        <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
+                                                    </div>  
+                                                </div>
+                                                <div clasS="column ">
+                                                         
+                                                    <a href="?add-to-cart=<?php echo $loop->post->ID; ?>" 
+                                                        rel="nofollow" data-quantity="{{ producto.id<?php echo $loop->post->ID; ?>}}" data-product_id="<?php echo $loop->post->ID; ?>" 
+                                                        class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button ajax_add_to_cart product_type_simple ">
+                                                        Añadir al pedido
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>    
+                                              
 
                                     </div>
 

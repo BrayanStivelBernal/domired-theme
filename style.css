@@ -197,3 +197,7 @@
 .stv-detalles-container{
 	width: 60%;
 }  
+
+.stv-detalles-container .quantity input{
+	width:100%;
+}
