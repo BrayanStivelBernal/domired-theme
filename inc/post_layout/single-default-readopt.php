@@ -127,7 +127,7 @@
                                                         }  ?></p>
                                                 </div>
 
-                                                <div class="row  space-around-center">
+                                                <div class="row q-add space-around-center">
 
 
                                                     <div class="column s-30">
