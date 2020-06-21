@@ -47,28 +47,45 @@
                                 while ( $loop->have_posts() ) : $loop->the_post(); 
                                 ?>
 
-                                    <div class="row stv-producto-item" data-profile="<?php echo $loop->post->ID; ?>">
-                                       
+                                    <div class="row stv-producto-item mobile-not" data-profile="<?php echo $loop->post->ID; ?>">
+                                      
                                         <div class="stv-producto-img-container">
+                                            
+                                            
                                          
                                             <img src="<?php  echo get_the_post_thumbnail_url($loop->post->ID); ?>" data-id="<?php echo $loop->post->ID; ?>">
 
                                         </div>
 
                                         <div class="stv-detalles-container">
-
-                                            <p><?php the_title(); ?></p>
-                                            <div class="row-wrap space-around-center">
-                                                <div class="column s-30">
-                                                   <span class="price"><?php echo $product->get_price_html(); ?></span> 
-                                                   <?php 
-                                                   $product = wc_get_product(  $loop->post->ID );
+                                            <div class="row-wrap space-around-center ">
+                                                <h4 class="titulo"><?php the_title(); ?></h4>
+                                                <span class="price"><?php echo $product->get_price_html(); ?></span> 
+                                            </div>
+                                             
                                             
+                                            <div class="row-wrap center-center descripcion">
+                                                    <p><?php $descrip = $product->get_description();
+                                                     if(strlen($descrip) > 100){
+                                                        echo substr($descrip ,0, 97).'...';
+                                                     }else{
+                                                        echo $descrip;
+                                                     }  ?></p>
+                                            </div>
+
+                                            <div class="row  space-around-center">
+
+
+                                                <div class="column s-30">
+                                                  
+                                                   <?php 
+                                                        $product = wc_get_product(  $loop->post->ID );
                                                    ?>
                                                     <div class="quantity">
                                                         <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
                                                     </div>  
                                                 </div>
+                                               
                                                 <div clasS="column ">
                                                          
                                                     <a href="?add-to-cart=<?php echo $loop->post->ID; ?>" 
@@ -80,6 +97,62 @@
                                                 
                                             </div>
                                         </div>    
+                                              
+
+                                    </div>
+
+                                    <div class="stv-producto-item mobile" data-profile="<?php echo $loop->post->ID; ?>">
+                                       
+                                        <div class="row-wrap space-between-center">
+                                            <h4 class="titulo"><?php the_title(); ?></h4>
+                                            <span class="price"><?php echo $product->get_price_html(); ?></span> 
+                                        </div>
+                                       
+                                        <div class="row">
+                      
+                                        <div class="stv-producto-img-container">
+
+                                                <img src="<?php  echo get_the_post_thumbnail_url($loop->post->ID); ?>" data-id="<?php echo $loop->post->ID; ?>">
+
+                                            </div>
+
+                                            <div class="stv-detalles-container">                                            
+                                                
+                                                <div class="row-wrap center-start descripcion">
+                                                        <p><?php $descrip = $product->get_description();
+                                                        if(strlen($descrip) > 50){
+                                                            echo substr($descrip ,0, 47).'...';
+                                                        }else{
+                                                            echo $descrip;
+                                                        }  ?></p>
+                                                </div>
+
+                                                <div class="row  space-around-center">
+
+
+                                                    <div class="column s-30">
+                                                    
+                                                    <?php 
+                                                            $product = wc_get_product(  $loop->post->ID );
+                                                    ?>
+                                                        <div class="quantity">
+                                                            <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
+                                                        </div>  
+                                                    </div>
+                                                
+                                                    <div clasS="column ">
+                                                            
+                                                        <a href="?add-to-cart=<?php echo $loop->post->ID; ?>" 
+                                                            rel="nofollow" data-quantity="{{ producto.id<?php echo $loop->post->ID; ?>}}" data-product_id="<?php echo $loop->post->ID; ?>" 
+                                                            class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button ajax_add_to_cart product_type_simple ">
+                                                            AÑADIR 
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>    
+                                        </div>
+                                     
                                               
 
                                     </div>
