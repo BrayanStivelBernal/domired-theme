@@ -178,6 +178,10 @@
 	padding:10px !important;
 }
 
+.stv-producto-item .quantity input{
+	width:100%;
+}
+
 
 .stv-products-loop > .row{
 	background-color: #e1e1e1;
@@ -284,3 +288,4 @@
 		padding-right: 15px;
 	}
 }
+
