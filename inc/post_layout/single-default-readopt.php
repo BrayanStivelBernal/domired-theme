@@ -36,11 +36,19 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article ng-show="tab === 1" >
                     <div class="row-wrap stv-products-loop">
-                     
+
                         <?php
+
+                            $marca = get_post_meta($post->ID, 'relacion_con_marca')[0];
+                            
                             $args = array(
                                 'post_type' => 'product',
-                                'posts_per_page' => 30
+                                'posts_per_page' => -1,
+                                'tax_query'      => array(array(
+                                        'taxonomy' => 'store',
+                                        'field'    => 'ID',
+                                        'terms'    => array ($marca))
+                                    )
                                 );
                             $loop = new WP_Query( $args );
                             if ( $loop->have_posts() ) {
