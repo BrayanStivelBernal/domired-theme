@@ -292,27 +292,45 @@
 /*CARRITO MOVILES*/
 
 #mobile-menu-icons .menu-cart-btn{
-	padding:10px 5px;
+	padding:10px 20px;
 	position:absolute;
 	bottom: -100vh;
 	margin-bottom:50px;
 	left:0%;
-	width:55%;
+	width:100%;
 	cursor:pointer;
 }
 
-#mobile-menu-icons .menu-cart-btn:before{
+#mobile-menu-icons .menu-cart-btn a:before{
 	content: 'MI PEDIDO';
-	display:inline-block;
-	float:left;
+	display:inline-block;	
 	font-size:18px;
 	font-family: 'Merienda' !important;
 	font-weight:600;
 	line-height:40px;
-	margin: 0 0 0 10%;
 	
 }
 
+#mobile-menu-icons .menu-cart-btn a .rh_woocartmenu-amount{
+	
+	font-size:18px;
+	font-family: 'Merienda' !important;
+	font-weight:600;
+	line-height:40px;
+	
+}
+
+#mobile-menu-icons .menu-cart-btn .rh-icon-notice{
+	min-width: 24px;
+    height: 22px;
+    font-size: 15px;
+    line-height: 24px;
+} 
+@media (max-width: 1024px){
+	.rh_woocartmenu-amount, .header-actions-logo, .header_seven_style .search {
+		display: block !important; 
+	}
+}
 #mobile-menu-icons .menu-cart-btn:active{
 	background: none #ff0000 !important;
     box-shadow: 0 1px 0 #999 !important;
@@ -320,3 +338,13 @@
     color: #ffffff !important;
 	
 }
+
+#mobile-menu-icons .menu-cart-btn a{
+	margin-right: 0 !important;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
