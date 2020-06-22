@@ -289,3 +289,34 @@
 	}
 }
 
+/*CARRITO MOVILES*/
+
+#mobile-menu-icons .menu-cart-btn{
+	padding:10px 5px;
+	position:absolute;
+	bottom: -100vh;
+	margin-bottom:50px;
+	left:0%;
+	width:55%;
+	cursor:pointer;
+}
+
+#mobile-menu-icons .menu-cart-btn:before{
+	content: 'MI PEDIDO';
+	display:inline-block;
+	float:left;
+	font-size:18px;
+	font-family: 'Merienda' !important;
+	font-weight:600;
+	line-height:40px;
+	margin: 0 0 0 10%;
+	
+}
+
+#mobile-menu-icons .menu-cart-btn:active{
+	background: none #ff0000 !important;
+    box-shadow: 0 1px 0 #999 !important;
+    top: inherit !important;
+    color: #ffffff !important;
+	
+}
