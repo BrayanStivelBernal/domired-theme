@@ -3,7 +3,7 @@
 <?php wp_enqueue_script('rehubwaypoints' );wp_enqueue_script('rhreadingprogress' );?>
 <!-- CONTENT -->
 
-<div ng-app="domired" ng-controller="menu" >
+<div ng-app="domired" ng-controller="menu" style="min-height:500px;">
     <div class="stv-tabs row-wrap center-center" ng-cloak>
         <div class="s-15 comercio-tabs" ng-repeat="categoria in categorias" ng-class="{'active-item': cat_select === categoria.term_id  }" ng-click="changeCat(categoria.term_id)">
             <span class="mkdf-tour-nav-section-icon dripicons-document"></span>
@@ -11,13 +11,13 @@
         </div>
         
     </div>
-    <div class="rh-container"> 
+    <div class="rh-container"  ng-cloak > 
         <div class="rh-content-wrap clearfix"  >
             <!-- Main Side -->
             <div class="main-side single post-readopt clearfix<?php if(get_post_meta($post->ID, 'post_size', true) == 'full_post' || rehub_option('disable_post_sidebar')) : ?> full_width<?php else:?> w_sidebar<?php endif; ?>">            
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article ng-show="tab === 1" >
-                    <div class="row-wrap stv-products-loop">
+                    <div class="row-wrap stv-products-loop" >
 
                         <?php
 
@@ -58,7 +58,7 @@
                                             
                                             
                                          
-                                            <img src="<?php  echo get_the_post_thumbnail_url($loop->post->ID); ?>" data-id="<?php echo $loop->post->ID; ?>">
+                                            <img src="<?php $foto = get_the_post_thumbnail_url($loop->post->ID); echo $foto; ?>" data-id="<?php echo $loop->post->ID; ?>">
 
                                         </div>
 
@@ -85,13 +85,17 @@
                                                   
                                                    <?php 
                                                         $product = wc_get_product(  $loop->post->ID );
-                                                   ?>
+
+                                                        if ( $product->get_type() === 'simple'){
+
+                                                            
+                                                           ?>
                                                     <div class="quantity">
                                                         <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
                                                     </div>  
                                                 </div>
                                                
-                                                <div clasS="column ">
+                                                <div class="column ">
                                                          
                                                     <a href="?add-to-cart=<?php echo $loop->post->ID; ?>" 
                                                         rel="nofollow" data-quantity="{{ producto.id<?php echo $loop->post->ID; ?>}}" data-product_id="<?php echo $loop->post->ID; ?>" 
@@ -99,6 +103,32 @@
                                                         Añadir al pedido
                                                     </a>
                                                 </div>
+
+
+
+                                                        <?php
+
+                                                        }else{
+                                                            
+                                                            $ids_product = json_encode($product->get_children(), true);
+                                                        ?>
+                                                </div>
+                                                <div class="column ">
+                                                         
+                                                    <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID.','.$ids_product; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
+                                                        rel="nofollow" class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button product_type_simple ">
+                                                        Como lo quieres
+                                                    </a>
+                                                </div>
+
+
+
+                                                        <?php
+
+                                                        }
+                                                       
+                                                   ?>
+                                                    
                                                 
                                             </div>
                                         </div>    

@@ -325,3 +325,41 @@
 	justify-content: space-around;
 }
 
+#customer_details .woocommerce-billing-fields h3{
+	visibility:hidden;
+}
+#customer_details .woocommerce-billing-fields h3:before{
+	visibility:visible;
+	content: 'Datos del envío:';
+}
+
+.dialog-add-cart{
+	background: none #ffc000 !important;
+    color: #000000 !important;
+    fill: #000000 !important;
+    border: none !important;
+    text-decoration: none !important;
+    outline: 0;
+    box-shadow: -1px 6px 19px rgba(255,192,0,0.2) !important;
+	border-radius: 4px !important;
+	padding: 8px 12px;
+}
+
+.domired-custom-product{
+	min-height: 600px;
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 600px;
+}
+
+.domired-custom-product form{
+	height:100%;
+
+}
+
+
+.domired-custom-product .header-dialog img{
+
+height: 170px;
+}
