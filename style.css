@@ -34,20 +34,29 @@
 .stv-tabs .comercio-tabs{
 	
 	margin:5px;
-	background-color:#e74635 ;
+	background-color:#ff0000 ;
 	border-radius:10px;
 	padding:5px;
 	color:white;
 	box-shadow: 3px 3px 9px #9c1d1d;
-}
+	
 
+}
+@media ( max-width: 767px ) {
+	.stv-tabs .comercio-tabs{
+		flex: 1 1 45%;
+		-webkit-flex: 1 1 45%;    
+		width: 45%;
+		max-width: 45%;
+	}
+}
 .stv-tabs .comercio-tabs:hover{
 	background-color:white;
-	color:#e74635;
+	color:#ff0000;
 }	
 .stv-tabs .comercio-tabs.active-item{
 	background-color:white;
-	color:#e74635;
+	color:#ff0000;
 }
 
 
@@ -197,7 +206,7 @@
 
 .stv-detalles-container .price{
 	font-weight: 600;
-	color: #e74635;
+	color: #ff0000;
 }
 
 .stv-detalles-container .descripcion{
@@ -220,7 +229,7 @@
 	}
 	.mobile.stv-producto-item .price{
 		font-weight: 600;
-		color: #e74635;
+		color: #ff0000;
 	}
 
 	.mobile > .space-between-center h4{
@@ -362,4 +371,18 @@
 .domired-custom-product .header-dialog img{
 
 height: 170px;
+}
+
+.is-sticky #mobile-menu-icons .menu-cart-btn{
+	opacity: 1;
+	transition: opacity ease-in-out 1s 0.5s !important;
+}
+
+ #mobile-menu-icons .menu-cart-btn{
+	position: fixed !important;
+	bottom: -54px;
+	transition: opacity ease-in-out 0.2s;
+	opacity: 0;
+
+
 }
