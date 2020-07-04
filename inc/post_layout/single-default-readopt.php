@@ -91,7 +91,7 @@
                                                             
                                                            ?>
                                                     <div class="quantity">
-                                                        <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
+                                                        <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="60" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
                                                     </div>  
                                                 </div>
                                                
@@ -109,13 +109,13 @@
                                                         <?php
 
                                                         }else{
-                                                            
+                                                           
                                                             $ids_product = json_encode($product->get_children(), true);
                                                         ?>
                                                 </div>
                                                 <div class="column ">
                                                          
-                                                    <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID.','.$ids_product; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
+                                                    <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
                                                         rel="nofollow" class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button product_type_simple ">
                                                         Como lo quieres
                                                     </a>
@@ -174,7 +174,7 @@
     
                                                     ?>
                                                         <div class="quantity">
-                                                            <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="<?php $product->backorders_allowed(); ?>" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
+                                                            <input type="number" id="quantity_5eee9f3a63b6f" ng-model="producto.id<?php echo $loop->post->ID; ?>" class="input-text qty text" step="1" min="1" max="60" name="quantity" value="1" title="Cantidad" size="4" placeholder="1" inputmode="numeric">
                                                         </div>  
                                                     </div>
                                                 
@@ -190,13 +190,13 @@
 
                                                     }else{
                                                         
-                                                        $ids_product = json_encode($product->get_children(), true);
+                                                        
                                                     ?>
                                                      </div>
                                                 
                                                     <div class="column ">
                                                             
-                                                        <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID.','.$ids_product; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
+                                                        <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
                                                             rel="nofollow" data-quantity="{{ producto.id<?php echo $loop->post->ID; ?>}}" data-product_id="<?php echo $loop->post->ID; ?>" 
                                                             class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button  product_type_simple ">
                                                             ESCOGE 
