@@ -386,3 +386,23 @@ height: 170px;
 
 
 }
+
+.opciones_container{
+	color:black;
+}
+
+#fixed-price { text-align: right; font-weight: bold; }
+
+.stv_fixed_bottom{
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	background-color: white;
+	padding:10px 15px;
+	left:0;
+
+}
+
+.header-dialog, md-dialog-content{
+	padding:10px;
+}
