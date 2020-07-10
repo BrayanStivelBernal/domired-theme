@@ -403,6 +403,10 @@ height: 170px;
 
 }
 
+md-dialog{
+	min-height: 80vh !important;
+}
+
 .header-dialog, md-dialog-content{
 	padding:10px;
 }

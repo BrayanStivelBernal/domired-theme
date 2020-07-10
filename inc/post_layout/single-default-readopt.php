@@ -117,7 +117,7 @@
                                                          
                                                     <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
                                                         rel="nofollow" class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button product_type_simple ">
-                                                        Como lo quieres
+                                                        Elige como la quieres
                                                     </a>
                                                 </div>
 
@@ -199,7 +199,7 @@
                                                         <a ng-click="producto_compuesto($event, <?php echo $loop->post->ID; ?>,'<?php the_title(); ?>','<?php echo $foto; ?>') " 
                                                             rel="nofollow" data-quantity="{{ producto.id<?php echo $loop->post->ID; ?>}}" data-product_id="<?php echo $loop->post->ID; ?>" 
                                                             class="re_track_btn rh-deal-compact-btn btn_offer_block add_to_cart_button  product_type_simple ">
-                                                            ESCOGE 
+                                                            ELIGE 
                                                         </a>
                                                     </div>
 
