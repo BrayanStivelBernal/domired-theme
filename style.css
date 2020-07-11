@@ -438,6 +438,12 @@ md-dialog .loading:after {
 
 .simply-toast.rh-toast.rh-toast-success {
 	color:white  !important;
-	background-color: #ffc000 !important;
+	background-color: #ff0000 !important;
 	border:1px solid #ff0000 !important;
+	font-weight: 700;
+	font-size: 1.1rem;
+	font-family: 'Merienda';
+}
+.simply-toast.rh-toast.rh-toast-success a {
+	color: #ffc000  !important;
 }
