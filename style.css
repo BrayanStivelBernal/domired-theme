@@ -447,3 +447,37 @@ md-dialog .loading:after {
 .simply-toast.rh-toast.rh-toast-success a {
 	color: #ffc000  !important;
 }
+
+.horarios_negocio{
+	position: absolute;
+	right: 10px;
+	bottom:10px;
+	font-weight: 600;
+	padding: 2px 4px;
+	font-family: 'Merienda';
+	font-size: 0.9rem;
+}
+
+.horarios_negocio.h_open{ 
+	background-color: #aad865;
+	color: white;
+}
+
+
+.horarios_negocio.h_close{ 
+	background-color: red;
+	color:white;
+}
+
+.b_cerrado{
+	background-color: red;
+	color:white;
+	right: 10px;
+	bottom:10px;
+	font-weight: 600;
+	padding: 2px 4px;
+	font-family: 'Merienda';
+	font-size: 0.9rem;
+	width: fit-content;
+	float: right;
+}

@@ -45,6 +45,35 @@ function remove_subnav_user() {
 }
 add_action( 'bp_init', 'remove_subnav_user' );
 
+date_default_timezone_set("America/Bogota");
 
+function get_hability_horarios ( $id ){
+   
+    $dias_meta = get_post_meta($id, 'horarios_negocios');
+   
+    $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado");
+    $dia_actual = $dias[date("w")];
+    if(!empty($dias_meta)){
+        
+        
+    foreach ($dias_meta[0] as $i => $value) {
+       
+        if($dia_actual == $dias[$i] ){
+            $horas = get_post_meta($id, 'horario_'.strtolower($dia_actual));
+            if(!empty($horas[0])){
+                return  in_array(date("H") , $horas[0]);
+            }else{
+                return false;
+            }
+            
+            
+        }
+    }
+    }else{
+        return false;
+    }
+    
+
+}
 
 ?>

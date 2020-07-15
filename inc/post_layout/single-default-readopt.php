@@ -1,5 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
-<?php global $post;?>
+<?php global $post;
+$hability = get_hability_horarios($post->ID);?>
+
 <?php wp_enqueue_script('rehubwaypoints' );wp_enqueue_script('rhreadingprogress' );?>
 <!-- CONTENT -->
 
@@ -77,9 +79,12 @@
                                                         echo $descrip;
                                                      }  ?></p>
                                             </div>
-
+                                        <?php 
+                                            
+                                            if($hability){ ?>
                                             <div class="row  space-around-center">
 
+                                                
 
                                                 <div class="column s-30">
                                                   
@@ -131,6 +136,11 @@
                                                     
                                                 
                                             </div>
+                                            <?php }else{
+                                                ?>
+                                                <div class="b_cerrado">CERRADO</div>
+                                                <?php
+                                            } ?>
                                         </div>    
                                               
 
@@ -161,7 +171,9 @@
                                                             echo $descrip;
                                                         }  ?></p>
                                                 </div>
-
+                                                <?php 
+                                            
+                                                if($hability){ ?>
                                                 <div class="row q-add space-around-center">
 
 
@@ -205,6 +217,11 @@
 
                                                     <?php  } ?>
                                                 </div>
+                                                <?php }else{
+                                                ?>
+                                                <div class="b_cerrado">CERRADO</div>
+                                                <?php
+                                            } ?>
                                             </div>    
                                         </div>
                                      

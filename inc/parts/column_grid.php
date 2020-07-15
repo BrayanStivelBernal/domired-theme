@@ -9,6 +9,11 @@ else {
     $link = get_the_permalink();
     $target = '';  
 }
+
+
+$hability = get_hability_horarios($post->ID);
+
+
 ?>  
 <?php
 $disable_meta = (isset($disable_meta)) ? $disable_meta : '';
@@ -47,6 +52,18 @@ if(rehub_option('enable_brand_taxonomy') == 1){
                 <?php wpsm_thumb ('medium_news_s', true, $cropimage) ?>
             <?php endif;?>
         </a>
+       
+            <?php  
+                
+                if($hability){
+                    echo ' <div class="horarios_negocio h_open"> ABIERTO </div>';
+
+                }else{
+                    echo ' <div class="horarios_negocio h_close"> CERRADO </div>';
+                }
+                    
+            ?>
+       
     </figure>
     <?php do_action( 'rehub_after_grid_column_figure' ); ?>
     <div class="content_constructor<?php echo ''.$paddclass;?>">
@@ -62,6 +79,7 @@ if(rehub_option('enable_brand_taxonomy') == 1){
                     echo '<div class="rh_custom_notice mb10 lineheight20 fontbold font90 rehub-sec-color">'.esc_html($dealcat_notice).'</div>';
                 }
             } 
+            
         ?>                 
         <?php do_action( 'rehub_after_grid_column_title' ); ?> 
         <?php if($exerpt_count && $exerpt_count !='0'):?>                      
