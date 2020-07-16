@@ -80,7 +80,7 @@ function get_hability_horarios ( $id ){
 add_action( 'woocommerce_order_item_meta_start', 'ts_order_item_meta_start', 10, 4 );
 function ts_order_item_meta_start( $item_id, $item, $order, $plain_text ){
     $product    = $item->get_product_id();
-	var_dump( '<p style="color:red; font-weight:600; text-transform:uppercase;"> NEGOCIO: ',$product, get_the_terms($product,'store')[0]->name ,'</p>');
+	echo '<p style="color:red; font-weight:600; text-transform:uppercase;"> NEGOCIO: ',$product, get_the_terms($product,'store')[0]->name ,'</p>';
 }
 
 ?>
