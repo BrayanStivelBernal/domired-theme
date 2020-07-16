@@ -456,6 +456,7 @@ md-dialog .loading:after {
 	padding: 2px 4px;
 	font-family: 'Merienda';
 	font-size: 0.9rem;
+	border-radius: 5px;
 }
 
 .horarios_negocio.h_open{ 
@@ -474,6 +475,7 @@ md-dialog .loading:after {
 	color:white;
 	right: 10px;
 	bottom:10px;
+	border-radius: 5px;
 	font-weight: 600;
 	padding: 2px 4px;
 	font-family: 'Merienda';
