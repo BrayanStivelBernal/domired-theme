@@ -80,7 +80,7 @@ function get_hability_horarios ( $id ){
 add_action( 'woocommerce_order_item_meta_start', 'ts_order_item_meta_start', 10, 4 );
 function ts_order_item_meta_start( $item_id, $item, $order, $plain_text ){
     
-	var_dump( '<p> NEGOCIO:', get_the_terms($item,'pa_brand') , $plain_text,'</p>');
+	var_dump( '<p> NEGOCIO:', get_the_terms($item,'pa_brand') , $order,'</p>');
 }
 
 ?>
