@@ -517,5 +517,8 @@ md-dialog .loading:after {
 
 .woocommerce-account-fields .woocommerce-form__label-for-checkbox, label[for="order_comments"]{
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1.02rem !important;
+}
+#billing_first_name_field{
+	width: 100% !important;
 }
