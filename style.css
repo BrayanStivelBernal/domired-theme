@@ -391,7 +391,28 @@ height: 170px;
 	color:black;
 }
 
-#fixed-price { text-align: right; font-weight: bold; }
+.domired-custom-product md-dialog-content{
+	overflow: visible;
+	padding-bottom: 76px;
+}
+.domired-custom-product .md-dialog-content{
+	padding-top: 0px;
+}
+
+.domired-custom-product md-dialog-content h4{
+	font-size: 1.4rem;
+    color: red;
+    line-height: 2rem;
+    text-align: center;
+    font-family: 'Merienda';
+}
+
+#fixed-price { text-align: center; 
+	font-weight: bold;    
+	 position: absolute;
+	 display: flex;
+    top: -3px;}
+#fixed-price span{ color: red; }
 
 .stv_fixed_bottom{
 	position: absolute;
@@ -483,3 +504,5 @@ md-dialog .loading:after {
 	width: fit-content;
 	float: right;
 }
+
+
