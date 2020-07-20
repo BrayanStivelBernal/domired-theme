@@ -508,3 +508,14 @@ md-dialog .loading:after {
 #ship-to-different-address{
 	display:none;
 }
+
+.woocommerce-billing-fields__field-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-account-fields .woocommerce-form__label-for-checkbox, label[for="order_comments"]{
+	font-weight: 600;
+	font-size: 1.1rem;
+}
