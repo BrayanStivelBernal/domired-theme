@@ -505,4 +505,6 @@ md-dialog .loading:after {
 	float: right;
 }
 
-
+#ship-to-different-address{
+	display:none;
+}
