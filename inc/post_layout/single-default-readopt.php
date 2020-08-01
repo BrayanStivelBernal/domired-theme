@@ -165,8 +165,8 @@ $hability = get_hability_horarios($post->ID);?>
                                                 
                                                 <div class="row-wrap center-start descripcion">
                                                         <p><?php $descrip = $product->get_description();
-                                                        if(strlen($descrip) > 50){
-                                                            echo substr($descrip ,0, 47).'...';
+                                                        if(strlen($descrip) > 80){
+                                                            echo substr($descrip ,0, 77).'...';
                                                         }else{
                                                             echo $descrip;
                                                         }  ?></p>
